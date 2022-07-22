@@ -21,7 +21,6 @@ We are also trying to get the answers to the questions, such as,
 
 ## Source Data
 Below are some of the sources that we will be using to answer the questions stated above.
-As far as the Grammy winners, since the awards were started from 1959, we will only be able to get the data from past 60 years.
 
 https://www.rollingstone.com/music/music-lists/the-100-greatest-songs-of-the-century-so-far-666874/
 
