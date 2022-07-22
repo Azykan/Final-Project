@@ -22,10 +22,4 @@ We are also trying to get the answers to the questions, such as,
 ## Source Data
 Below are some of the sources that we will be using to answer the questions stated above.
 
-https://www.rollingstone.com/music/music-lists/the-100-greatest-songs-of-the-century-so-far-666874/
-
-https://www.loudersound.com/features/the-100-greatest-rock-songs-of-the-century-so-far
-
-https://stacker.com/stories/4082/100-best-albums-21st-century-according-critics
-
-https://charts.spotify.com/charts/overview/global#Flagship
+https://charts.spotify.com/charts/overview/global 
