@@ -16,9 +16,8 @@ been the most consistent to be on the top.
 We are also trying to get the answers to the questions, such as, 
 
 1. Which genre (album or singles) has been the most consistent to be on the top?
-2. Which artist has higher number of hits in the past 100 years?
-3. How much has the songs earned?
-4. Which of the hits, from past 100 years, has won a Grammy?
+2. Which artist has higher number of streams?
+3. How long the song has been on the chart?
 
 ## Source Data
 Below are some of the sources that we will be using to answer the questions stated above.
