@@ -2,7 +2,7 @@
 
 ## Topic
 
-Top 100 Songs of the Century
+Top Streamed Songs on Spotify
 
 ## why?
 
@@ -16,9 +16,8 @@ been the most consistent to be on the top.
 We are also trying to get the answers to the questions, such as, 
 
 1. Which genre (album or singles) has been the most consistent to be on the top?
-2. Which artist has higher number of hits in the past 100 years?
-3. How much has the songs earned?
-4. Which of the hits, from past 100 years, has won a Grammy?
+2. Which artist has higher number of streams?
+3. How long the song has been on the chart?
 
 ## Source Data
 Below are some of the sources that we will be using to answer the questions stated above.
@@ -30,6 +29,4 @@ https://www.loudersound.com/features/the-100-greatest-rock-songs-of-the-century-
 
 https://stacker.com/stories/4082/100-best-albums-21st-century-according-critics
 
-https://www.grammy.com/artists/21st-century/13136
-
-https://en.wikipedia.org/wiki/Grammy_Award_for_Album_of_the_Year
+https://charts.spotify.com/charts/overview/global#Flagship
