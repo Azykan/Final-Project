@@ -17,3 +17,7 @@ We are also trying to get the answers to the questions, such as,
 Below are the sources that we will be using to answer the questions stated above.
 
 https://charts.spotify.com/charts/overview/global 
+
+### Flow Chart
+![Flowchart Template - Main Frame](https://user-images.githubusercontent.com/97486216/180625518-b455c657-8762-4bd9-8033-e78cecdcbbaf.jpg)
+
