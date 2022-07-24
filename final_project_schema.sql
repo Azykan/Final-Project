@@ -10,7 +10,7 @@ CREATE TABLE weekly_global_streams (
   weeks_on_chart INT NOT NULL,
   streams INT NOT NULL);
 
-  -- New Table
+  -- Genre Table
 CREATE TABLE artist_genres (
 artist_names VARCHAR NOT NULL,
 artist_genres VARCHAR);
@@ -32,6 +32,6 @@ w.streams,
 a.artist_genres
 
 FROM weekly_global_streams AS w
-LEFT JOIN artist_genres a
+LEFT JOIN artist_genres AS a
 ON w.artist_names = a.artist_name
 ORDER BY rank
