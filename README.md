@@ -21,3 +21,11 @@ https://charts.spotify.com/charts/overview/global
 ### Flow Chart
 ![Flowchart Template - Main Frame](https://user-images.githubusercontent.com/97486216/180625518-b455c657-8762-4bd9-8033-e78cecdcbbaf.jpg)
 
+### Database
+   - For our project we are using Amazon's AWS RDS service.
+        - We plan to use this webservice to best share our data when going through and performing our machine learning models.  This will also help with any other transformations we may implement during our analysis.
+   - See below images for screenshots of the sucessfully created database and the ability to conect to said database.
+
+![This is an Image]()
+
+![This is an Image]()
