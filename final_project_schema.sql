@@ -10,7 +10,7 @@ CREATE TABLE weekly_global_streams (
   weeks_on_chart INT NOT NULL,
   streams INT NOT NULL);
 
-  -- New Table
+  -- Genre Table
 CREATE TABLE artist_genres (
 artist_names VARCHAR NOT NULL,
 artist_genres VARCHAR);
