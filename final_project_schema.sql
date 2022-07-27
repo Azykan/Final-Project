@@ -33,5 +33,5 @@ a.artist_genres
 
 FROM weekly_global_streams AS w
 LEFT JOIN artist_genres AS a
-ON w.artist_names = a.artist_name
+ON w.artist_names = a.artist_names
 ORDER BY rank;

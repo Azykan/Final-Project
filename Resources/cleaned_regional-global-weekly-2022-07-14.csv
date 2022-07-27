@@ -32,7 +32,7 @@ rank,uri,artist_names,track_name,source,peak_rank,previous_rank,weeks_on_chart,s
 31,spotify:track:0T5iIrXA4p5GsubkhuBIKV,Stephen Sanchez,Until I Found You,Republic Records,30,33,10,12634834
 32,spotify:track:1dm6z1fWB0cErMszU25dy2,Bad Bunny,Despues de la Playa,Rimas Entertainment LLC,7,32,10,12309949
 33,spotify:track:4h4QlmocP3IuwYEj2j14p8,Nicky Youre,Sunroof,Thirty Knots Columbia,33,39,10,12301842
-34,spotify:track:1O2pcBJGej0pmH2Y9XZMs6,Cris Mj,Una Noche en Medellín,Nabru Records LLC,9,37,20,12071466
+34,spotify:track:1O2pcBJGej0pmH2Y9XZMs6,Cris Mj,Una Noche en Medella�n,Nabru Records LLC,9,37,20,12071466
 35,spotify:track:1797zYiX4cKosMH836X9Gt,Bad Bunny,La Corriente,Rimas Entertainment LLC,17,36,10,12062263
 36,spotify:track:7FlQk2gJ6TBrHHiidvdR2O,Becky G,MAMIII,Kemosabe Records RCA Records,5,35,22,11891516
 37,spotify:track:3CIyK1V4JEJkg02E4EJnDl,Imagine Dragons,Enemy with JID  from the series Arcane League of Legends,Kid Ina Korner   Interscope,3,31,37,11796456
@@ -54,7 +54,7 @@ rank,uri,artist_names,track_name,source,peak_rank,previous_rank,weeks_on_chart,s
 53,spotify:track:2B4GHvToeLTOBB4QLzW3Ni,Farruko,Pepas,Sony Music Latin,4,55,53,9862960
 54,spotify:track:4hceSKjrkDTO0nMKFcb3sj,Bizarrap,Villano Antillano Bzrp Music Sessions Vol 51,DALE PLAY Records,54,97,5,9730344
 55,spotify:track:3rmo8F54jFF8OgYsqTxm5d,Ed Sheeran,Bad Habits,Atlantic Records UK,3,57,55,9709305
-56,spotify:track:6DoL1yYIwEW7VZMRaJhoJI,Chris Jedi,La Llevo Al Cielo Ft Ñengo Flow,UMLE  Latino,56,59,8,9661420
+56,spotify:track:6DoL1yYIwEW7VZMRaJhoJI,Chris Jedi,La Llevo Al Cielo Ft aengo Flow,UMLE  Latino,56,59,8,9661420
 57,spotify:track:2z9YkcLojiOE7Eu2p9lPZR,Feid,Normal,UMLE  Latino,57,-1,1,9623337
 58,spotify:track:5CM4UuQ9Gnd6K2YyKGPMoK,Steve Lacy,Bad Habit,LM Records RCA Records,58,-1,1,9518756
 59,spotify:track:4ZtFanR9U6ndgddUvNcjcG,Olivia Rodrigo,good 4 u,Olivia Rodrigo PS,1,58,61,9429278
@@ -70,7 +70,7 @@ rank,uri,artist_names,track_name,source,peak_rank,previous_rank,weeks_on_chart,s
 69,spotify:track:0e8nrvls4Qqv5Rfa2UhqmO,Lil Nas X,THATS WHAT I WANT,Columbia,3,77,43,8430368
 70,spotify:track:5QO79kh1waicV47BqGRL3g,The Weeknd,Save Your Tears,Republic Records,2,74,84,8390807
 71,spotify:track:5wANPM4fQCJwkGd4rN57mH,Olivia Rodrigo,drivers license,Olivia Rodrigo PS,1,73,79,8381927
-72,spotify:track:1R0a2iXumgCiFb7HEZ7gUE,Taylor Swift,Don’t Blame Me,Big Machine Records LLC,72,82,9,8333301
+72,spotify:track:1R0a2iXumgCiFb7HEZ7gUE,Taylor Swift,Dont Blame Me,Big Machine Records LLC,72,82,9,8333301
 73,spotify:track:4RVwu0g32PAqgUiJoXsdF8,Billie Eilish,Happier Than Ever,Darkroom Interscope Records,6,72,50,8330230
 74,spotify:track:58ge6dfP91o9oXMzq3XkIS,Arctic Monkeys,505,Domino Warner Records,53,81,28,8328287
 75,spotify:track:6HU7h9RYOaPRFeh0R3UeAr,Olivia Rodrigo,deja vu,Olivia Rodrigo PS,3,78,67,8298197
@@ -101,7 +101,7 @@ rank,uri,artist_names,track_name,source,peak_rank,previous_rank,weeks_on_chart,s
 100,spotify:track:18asYwWugKjjsihZ0YvRxO,Tiesto,The Motto,Atlantic Records,22,89,36,7581340
 101,spotify:track:7o2CTH4ctstm8TNelqjb51,Guns N Roses,Sweet Child O Mine,Geffen,101,170,6,7448276
 102,spotify:track:6uvh0In7u1Xn4HgxOfAn8O,Harry Styles,Matilda,Columbia,5,90,8,7444904
-103,spotify:track:3sa06xVNmLLYIxdNNmVQN8,Jax Jones,Where Did You Go? feat MNEK,Polydor Records,103,110,13,7444100
+103,spotify:track:3sa06xVNmLLYIxdNNmVQN8,Jax Jones,Where Did You Go feat MNEK,Polydor Records,103,110,13,7444100
 104,spotify:track:4SqWKzw0CbA05TGszDgMlc,The Walters,I Love You So,Warner Records,21,106,40,7388259
 105,spotify:track:7lQ8MOhq6IN2w8EYcFNSUk,Eminem,Without Me,Aftermath,31,101,42,7370646
 106,spotify:track:2DgdHcjWmO3qd50RzuBLgZ,Panic At The Disco,House of Memories,Decaydance Fueled By Ramen,64,98,12,7331020
@@ -141,7 +141,7 @@ rank,uri,artist_names,track_name,source,peak_rank,previous_rank,weeks_on_chart,s
 140,spotify:track:4iJyoBOLtHqaGxP12qzhQI,Justin Bieber,Peaches feat Daniel Caesar and Giveon,RBMG Def Jam,1,133,69,6523246
 141,spotify:track:1u8c2t2Cy7UBoG4ArRcF5g,Taylor Swift,Blank Space,Big Machine Records LLC,113,140,36,6493642
 142,spotify:track:0RiRZpuVRbi7oqRdSMwhQY,Post Malone,Sunflower  SpiderMan Into the SpiderVerse,Republic Records,1,139,195,6480368
-143,spotify:track:2NMjggapJcXXM7WccGEBUO,Bad Bunny,Enseñame a Bailar,Rimas Entertainment LLC,27,124,10,6472774
+143,spotify:track:2NMjggapJcXXM7WccGEBUO,Bad Bunny,Ensename a Bailar,Rimas Entertainment LLC,27,124,10,6472774
 144,spotify:track:5vC8UAOHeG95ehRzZChniB,L7NNON,Ai Preto,Papatunes,144,176,2,6463319
 145,spotify:track:10xV5l9nhLvFpR8mqzs0bL,Marshmello,Numb,Joytime Collective RCA Records,114,149,5,6446068
 146,spotify:track:1WCEAGGRD066z2Q89ObXTq,David Guetta,Crazy What Love Can Do,Parlophone UK,146,156,10,6444554
