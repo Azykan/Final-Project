@@ -2,26 +2,26 @@
 
 ![Music back round Best](https://user-images.githubusercontent.com/97486216/180366857-01c76bba-445e-469f-b123-70bef6e8782e.jpg)
 
-Hundreds of thousands of artists have been creating music to reach the Top 20 in their genres. The likelyhood of success for any song to reach the Top 20 is low, so we plan to analyze Spotify's fan-based song streaming data to analyze streaming trends. 
+Hundreds of thousands of artists have been creating music to reach the Top 20 in their genres. The likelihood of success for any song to reach the Top 20 is low, so we plan to analyze Spotify's fan-based song streaming data to analyze streaming trends. 
 
-> [The rise of music streaming services] fundamentally changed how music is valued. Instead of sales, the emphasis was on repeated listens and getting a song in a popular playlist or radio station. The music industry shunned the new platforms at the start, with several artists blocking Spotify and Pandora from using their material. <sup>[5](#top-streaming-apps)</sup>
+> [The rise of music streaming services] fundamentally changed how music is valued. Instead of sales, the emphasis was on repeated listens and getting a song on a popular playlist or radio station. The music industry shunned the new platforms at the start, with several artists blocking Spotify and Pandora from using their material. <sup>[5](#top-streaming-apps)</sup>
 
 We chose to use Spotify as the data source because it is the most popular music streaming platform in the world, with over 350 million users and 150 million subscribers. <sup>[5](#top-streaming-apps)</sup>
 
-Fan-based song popularity is a better measure of popularity than music awards. Music awards, such as the Grammys, and Music Charts, such as Billboard, flawed for a number of reasons.
+Fan-based song popularity is a better measure of popularity than music awards. Music awards, such as the Grammys, and Music Charts, such as Billboard, are flawed for a number of reasons.
 
 ## Grammy Awards 	<sup>[1](#grammy-awards-link)</sup>
-- Songs must be nominated by members of the National Academy of Recording Arts and Sciences (NARAS) for consideration into the awards
+- Songs must be nominated by members of the National Academy of Recording Arts and Sciences (NARAS) for consideration in the awards
 - Nominated songs are then reviewed by 150 recording industry experts for eligibility
-- Songs which make it through the vetting process are put up for a vote to voting members
-- Academy members are required to vote solely based upon quality, without consideration for sales, chart performance, personal friendships, regional preferences or company loyalty
-- Skewed towards artits with established record labels
+- Songs that make it through the vetting process are put up for a vote by voting members
+- Academy members are required to vote solely based upon quality, without consideration for sales, chart performance, personal friendships, regional preferences, or company loyalty
+- Skewed towards artists with established record labels
 
 ## Billboard Charts <sup>[2](#billboard-charts-link)</sup>
 - Largely based on BDS and Soundscan, which tracks airplay (from broadcast radio) on monitored radio stations, using number of plays x total audience of each station
 - Songs moving down the chart will be removed automatically after 26 weeks
 - Record label-sponsored spin programs manipulated the charts
-- Skewed towards artits with established record labels
+- Skewed towards artists with established record labels
 
 ## MRC Data/Nielsen Soundscan <sup>[3](#mrc-link)</sup>
 - Based on Point-of-sale album purchases
@@ -35,15 +35,15 @@ From electric guitars to auto-tunes, songs have been through some massive transf
 
 ## What problems our analysis solves
 
-Spotify API data includes streaming statistics for all streamed songs. Each of the traditional chart platforms are skewed by opinion, money, or bad/incomplete data.
+Spotify API data includes streaming statistics for all streamed songs. Each of the traditional chart platforms is skewed by opinion, money, or bad/incomplete data.
 
-Although Spotify is only one of many streaming music services globally, it is a better represenation of fan-based popularity than the traditional platforms used to build charts.
+Although Spotify is only one of many streaming music services globally, it is a better representation of fan-based popularity than the traditional platforms used to build charts.
 
 
 # Questions we are looking to answer 
 
 1. Which genres have been consistently on the top according to number of streams?
-2. Which artists are the popular, by genre, according to number of streams?
+2. Which artists are the most popular, by genre, according to number of streams?
 3. How long have the genres and artists been at the top of the charts?
 4. Which songs that haven't been in the Top 20 are likely to make it to the Top 20 based on their attributes, compared to attributes of past Top 20 songs?
 
@@ -64,20 +64,20 @@ We needed the following data to answer these questions
 
 We are using the Spotify Web API(https://developer.spotify.com/documentation/web-api/quick-start/) for Top 200 Fan-Based Global Weekly Songs as the data source for this project.
 
-This is spotify's user-facing Top 200 Weekly Chart:
+This is Spotify’s user-facing Top 200 Weekly Chart:
 https://charts.spotify.com/charts/overview/global 
 
 ### Data Exploration/Analysis
 
-We explored the raw data using a compbination of Python and Tableau looking for data inconsistencies, missing data, irrelevant data. We built and exploratory dashboard to get a baseline understanding of the data we had collected.
+We explored the raw data using a combination of Python and Tableau looking for data inconsistencies, missing data, and irrelevant data. We built an exploratory dashboard to get a baseline understanding of the data we had collected.
 
 ### ETL Flow Chart
 ![Flowchart Template - Main Frame](https://user-images.githubusercontent.com/97486216/180625518-b455c657-8762-4bd9-8033-e78cecdcbbaf.jpg)
 
 ### Database
-   - For our project we are using Amazon's AWS RDS service.
-        - We plan to use this webservice to best share our data when going through and performing our machine learning models.  This will also help with any other transformations we may implement during our analysis.
-   - See below images for screenshots of the sucessfully created database and the ability to conect to said database.
+   - For our project, we are using Amazon's AWS Postgres RDS service.
+        - We plan to use this web service to best share our data when going through and performing our machine learning models.  This will also help with any other transformations we may implement during our analysis.
+   - See the below images for screenshots of the successfully created database and the ability to connect to said database.
 
 #### Creation of Database server
 ![This is an Image](https://github.com/Azykan/Final-Project/blob/main/Resources/AWS_database_view.png)
@@ -88,7 +88,7 @@ We explored the raw data using a compbination of Python and Tableau looking for 
 #### ERD
 ![QuickDBD_ERD_export](https://user-images.githubusercontent.com/97486216/182056600-94153e73-ba97-4528-85be-7a390ee18556.png)
 
-## Data Visulization
+## Data Visualization
 
 Data Visualization in Tableau
 https://public.tableau.com/app/profile/angela.zykan/viz/FinalProjectv1_16588877562730/RaceChartbyArtist
@@ -97,7 +97,7 @@ https://public.tableau.com/app/profile/angela.zykan/viz/FinalProjectv1_165888775
 
 ## Machine Learning
 
-The Machine Learning model will predict if a song that hasn't yet been in the Top 20 is likely to make it to the Top 20 based on it's attributes, compared to attributes of past Top 20 songs.
+The Machine Learning model will predict if a song that hasn't yet been in the Top 20 is likely to make it to the Top 20 based on its attributes, compared to attributes of past Top 20 songs.
 
 ### Preprocessing
 
@@ -110,7 +110,7 @@ The training dataset will include the Top 20 songs from each week since 2018, in
 - Only looking at 5 years of data
 - Limited to the Weekly Top 200 songs from Spotify (API limitation)
 - Genre is wrapped with a Python package called Spotipy
-- Artists Names had special characters which had to handled in Python
+- Artists’ Names had special characters which had to be handled in Python
 - Song genres are not available
 - Artist genres are passed as an array, with multiple genres per artist
 
@@ -129,6 +129,9 @@ The team is communicating through Slack and using Zoom and Google Meet for peer 
 
 
 ## References
+#### Google Slides Presentation
+https://docs.google.com/presentation/d/17nqJ9vrqAgnOYUN2oFVwoUGJvRV1aU0XoI_XK6x1OgA
+
 #### Grammy Awards Link
 https://en.wikipedia.org/wiki/Grammy_Awards#Entry_process_and_selection_of_nominees
 #### Billboard Charts Link
