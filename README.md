@@ -4,11 +4,11 @@
 
 Hundreds of thousands of artists have been creating music to reach the Top 20 in their genres. The likelyhood of success for any song to reach the Top 20 is low, so we plan to analyze Spotify's fan-based song streaming data to analyze streaming trends. 
 
-The rise of music streaming services fundamentally changed how music is valued. Instead of sales, the emphasis was on repeated listens and getting a song in a popular playlist or radio station. The music industry shunned the new platforms at the start, with several artists blocking Spotify and Pandora from using their material.
-
-We feel that fan-based song popularity is a better measure of popularity than music awards. Music awards, such as the Grammys, are not a good measure of popularity.
+> [The rise of music streaming services] fundamentally changed how music is valued. Instead of sales, the emphasis was on repeated listens and getting a song in a popular playlist or radio station. The music industry shunned the new platforms at the start, with several artists blocking Spotify and Pandora from using their material. <sup>[5](#top-streaming-apps)</sup>
 
 We chose to use Spotify as the data source because it is the most popular music streaming platform in the world, with over 350 million users and 150 million subscribers. <sup>[5](#top-streaming-apps)</sup>
+
+Fan-based song popularity is a better measure of popularity than music awards. Music awards, such as the Grammys, and Music Charts, such as Billboard, flawed for a number of reasons.
 
 ## Grammy Awards 	<sup>[1](#grammy-awards-link)</sup>
 - Songs must be nominated by members of the National Academy of Recording Arts and Sciences (NARAS) for consideration into the awards
@@ -48,16 +48,26 @@ Although Spotify is only one of many streaming music services globally, it is a 
 4. Which songs that haven't been in the Top 20 are likely to make it to the Top 20 based on their attributes, compared to attributes of past Top 20 songs?
 
 
+# Data
 
-## Source Data
+We needed the following data to answer these questions
+- Artist Name
+- Track Name
+- Genre
+- Number of Streams
+- Week
+- Breakdown of top songs vs non-top songs
+- Song attributes such as tempo, danceability, volume, etc.
 
 
+## Data Sources
 
-Below are the sources that we will be using to answer the questions stated above.
+We are using the Spotify Web API(https://developer.spotify.com/documentation/web-api/quick-start/) for Top 200 Fan-Based Global Weekly Songs as the data source for this project.
 
+This is spotify's user-facing Top 200 Weekly Chart:
 https://charts.spotify.com/charts/overview/global 
 
-### Flow Chart
+### ETL Flow Chart
 ![Flowchart Template - Main Frame](https://user-images.githubusercontent.com/97486216/180625518-b455c657-8762-4bd9-8033-e78cecdcbbaf.jpg)
 
 ### Database
@@ -65,17 +75,60 @@ https://charts.spotify.com/charts/overview/global
         - We plan to use this webservice to best share our data when going through and performing our machine learning models.  This will also help with any other transformations we may implement during our analysis.
    - See below images for screenshots of the sucessfully created database and the ability to conect to said database.
 
+#### Creation of Database server
 ![This is an Image](https://github.com/Azykan/Final-Project/blob/main/Resources/AWS_database_view.png)
 
+#### Data in Database
 ![This is an Image](https://github.com/Azykan/Final-Project/blob/main/Resources/AWS_database.png)
+
+#### ERD
+![QuickDBD_ERD_export](https://user-images.githubusercontent.com/97486216/182056600-94153e73-ba97-4528-85be-7a390ee18556.png)
+
+## Data Visulization
+
+Data Visualization in Tableau
+
+![Race Chart by Artist](https://user-images.githubusercontent.com/97486216/182058364-da05ea76-b37b-4bcd-afe2-ec65baabf1dc.png)
+
+## Machine Learning
+
+The Machine Learning model will predict if a song that hasn't yet been in the Top 20 is likely to make it to the Top 20 based on it's attributes, compared to attributes of past Top 20 songs.
+
+### Preprocessing
+
+The training dataset will include the Top 20 songs from each week since 2018, including number of streams and song metadata, and the bottom 180 songs from each week will be compared on metadata similarity to the Top 20.
+
+
+## Caveats
+
+- Only using a single streaming platform as a data source
+- Only looking at 5 years of data
+- Limited to the Weekly Top 200 songs from Spotify (API limitation)
+- Genre is wrapped with a Python package called Spotipy
+- Artists Names had special characters which had to handled in Python
+- Song genres are not available
+- Artist genres are passed as an array, with multiple genres per artist
+
+## Communication
+The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
+
+# Technology and Methodology
+Python
+Google Colab
+AWS RDS (Postgres)
+Github (Code Repo and hosting in GitHub Pages)
+Azure DevOps (for project management)
+Tableau (for presentation)
+Miro (for diagramming)
+Google Slides (for presentation)
 
 
 # References
-## Grammy Awards Link
+#### Grammy Awards Link
 https://en.wikipedia.org/wiki/Grammy_Awards#Entry_process_and_selection_of_nominees
-## Billboard Charts Link
+#### Billboard Charts Link
 https://billboardchartrewind.wordpress.com/2018/10/19/hot-country-singles-the-first-chart-to-incorporate-modern-bds-tracking/
-## MRC Link
+#### MRC Link
 https://en.wikipedia.org/wiki/MRC_Data
-## Top Streaming Apps
+#### Top Streaming Apps
 https://www.businessofapps.com/data/music-streaming-market/
