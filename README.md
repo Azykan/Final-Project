@@ -67,6 +67,10 @@ We are using the Spotify Web API(https://developer.spotify.com/documentation/web
 This is spotify's user-facing Top 200 Weekly Chart:
 https://charts.spotify.com/charts/overview/global 
 
+### Data Exploration/Analysis
+
+We explored the raw data using a compbination of Python and Tableau looking for data inconsistencies, missing data, irrelevant data. We built and exploratory dashboard to get a baseline understanding of the data we had collected.
+
 ### ETL Flow Chart
 ![Flowchart Template - Main Frame](https://user-images.githubusercontent.com/97486216/180625518-b455c657-8762-4bd9-8033-e78cecdcbbaf.jpg)
 
@@ -87,6 +91,7 @@ https://charts.spotify.com/charts/overview/global
 ## Data Visulization
 
 Data Visualization in Tableau
+https://public.tableau.com/app/profile/angela.zykan/viz/FinalProjectv1_16588877562730/RaceChartbyArtist
 
 ![Race Chart by Artist](https://user-images.githubusercontent.com/97486216/182058364-da05ea76-b37b-4bcd-afe2-ec65baabf1dc.png)
 
@@ -112,18 +117,18 @@ The training dataset will include the Top 20 songs from each week since 2018, in
 ## Communication
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
 
-# Technology and Methodology
-Python
-Google Colab
-AWS RDS (Postgres)
-Github (Code Repo and hosting in GitHub Pages)
-Azure DevOps (for project management)
-Tableau (for presentation)
-Miro (for diagramming)
-Google Slides (for presentation)
+## Technology and Methodology
+- Python
+- Google Colab
+- AWS RDS (Postgres)
+- Github (Code Repo and hosting in GitHub Pages)
+- Azure DevOps (for project management)
+- Tableau (for presentation)
+- Miro (for diagramming)
+- Google Slides (for presentation)
 
 
-# References
+## References
 #### Grammy Awards Link
 https://en.wikipedia.org/wiki/Grammy_Awards#Entry_process_and_selection_of_nominees
 #### Billboard Charts Link
