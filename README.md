@@ -4,22 +4,40 @@
 
 Hundreds of thousands of artists have been creating music to reach the Top 20 in their genres. The likelyhood of success for any song to reach the Top 20 is low, so we plan to analyze Spotify's fan-based song streaming data to analyze streaming trends. 
 
+The rise of music streaming services fundamentally changed how music is valued. Instead of sales, the emphasis was on repeated listens and getting a song in a popular playlist or radio station. The music industry shunned the new platforms at the start, with several artists blocking Spotify and Pandora from using their material.
+
 We feel that fan-based song popularity is a better measure of popularity than music awards. Music awards, such as the Grammys, are not a good measure of popularity.
 
-## [Grammy Awards](#grammy-awards)
+We chose to use Spotify as the data source because it is the most popular music streaming platform in the world, with over 350 million users and 150 million subscribers. <sup>[5](#top-streaming-apps)</sup>
+
+## Grammy Awards 	<sup>[1](#grammy-awards-link)</sup>
 - Songs must be nominated by members of the National Academy of Recording Arts and Sciences (NARAS) for consideration into the awards
 - Nominated songs are then reviewed by 150 recording industry experts for eligibility
 - Songs which make it through the vetting process are put up for a vote to voting members
 - Academy members are required to vote solely based upon quality, without consideration for sales, chart performance, personal friendships, regional preferences or company loyalty
+- Skewed towards artits with established record labels
 
-Across millions of songs, hundreds of thousand of artists, and hundreds of genres
+## Billboard Charts <sup>[2](#billboard-charts-link)</sup>
+- Largely based on BDS and Soundscan, which tracks airplay (from broadcast radio) on monitored radio stations, using number of plays x total audience of each station
+- Songs moving down the chart will be removed automatically after 26 weeks
+- Record label-sponsored spin programs manipulated the charts
+- Skewed towards artits with established record labels
 
+## MRC Data/Nielsen Soundscan <sup>[3](#mrc-link)</sup>
+- Based on Point-of-sale album purchases
+- Does not include digital streams
+- Not all retailers participate in the SoundScan program, so total CD sales are projected from the collected data using weighting
 
 Music is the combination of rhythm and harmony that creates melodies and songs.
 It goes beyond the range of time, space, and cultures. Throughout the years, music has evolved and transformed helping to create various genres of songs, which are combinations of melodies and lyrics. 
 
 From electric guitars to auto-tunes, songs have been through some massive transformations. Therefore, we have selected this topic to analyze how songs have evolved, for better or worse, throughout the years. We want to create a data frame that can project the genre(s) which have been consistently to be on the top.
 
+## What problems our analysis solves
+
+Spotify API data includes streaming statistics for all streamed songs. Each of the traditional chart platforms are skewed by opinion, money, or bad/incomplete data.
+
+Although Spotify is only one of many streaming music services globally, it is a better represenation of fan-based popularity than the traditional platforms used to build charts.
 
 
 # Questions we are looking to answer 
@@ -32,6 +50,9 @@ From electric guitars to auto-tunes, songs have been through some massive transf
 
 
 ## Source Data
+
+
+
 Below are the sources that we will be using to answer the questions stated above.
 
 https://charts.spotify.com/charts/overview/global 
@@ -50,7 +71,11 @@ https://charts.spotify.com/charts/overview/global
 
 
 # References
-- Grammy Awards
+## Grammy Awards Link
 https://en.wikipedia.org/wiki/Grammy_Awards#Entry_process_and_selection_of_nominees
-
-
+## Billboard Charts Link
+https://billboardchartrewind.wordpress.com/2018/10/19/hot-country-singles-the-first-chart-to-incorporate-modern-bds-tracking/
+## MRC Link
+https://en.wikipedia.org/wiki/MRC_Data
+## Top Streaming Apps
+https://www.businessofapps.com/data/music-streaming-market/
