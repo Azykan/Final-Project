@@ -15,6 +15,26 @@ CREATE TABLE artist_genres (
 artist_names VARCHAR NOT NULL,
 artist_genres VARCHAR);
 
+-- Analytics Table
+CREATE TABLE track_analytics (
+  uri VARCHAR NOT NULL,
+  danceability DECIMAL NOT NULL,
+  energy DECIMAL NOT NULL,
+  key INT NOT NULL,
+  loudness DECIMAL NOT NULL,
+  mode INT NOT NULL,
+  speechiness DECIMAL NOT NULL,
+  acousticness DECIMAL NOT NULL,
+  instrumentalness DECIMAL NOT NULL,
+  liveness DECIMAL NOT NULL,
+  valence DECIMAL NOT NULL,
+  tempo DECIMAL NOT NULL,
+  type VARCHAR NOT NULL,
+  id VARCHAR NOT NULL,
+  track_href VARCHAR NOT NULL,
+  analysis_url VARCHAR NOT NULL,
+  duration_ms INT NOT NULL,
+  time_signature INT NOT NULL);
 
 SELECT * FROM artist_genres;
 
