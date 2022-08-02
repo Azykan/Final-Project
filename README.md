@@ -103,6 +103,12 @@ The Machine Learning model will predict if a song that hasn't yet been in the To
 
 The training dataset will include the Top 20 songs from each week since 2018, including number of streams and song metadata, and the bottom 180 songs from each week will be compared on metadata similarity to the Top 20.
 
+## Data Cleansing
+- Replaced non-English characters with English variants
+- Used the following Regex to create valid JSON from Python API logs "features retrieved in \d{1}.{1}\d{2} seconds$"
+
+![image](https://user-images.githubusercontent.com/97486216/182278333-0298b1c3-2980-4a57-a3ca-39d6ff56d050.png)
+
 
 ## Caveats
 
@@ -113,6 +119,8 @@ The training dataset will include the Top 20 songs from each week since 2018, in
 - Artists’ Names had special characters which had to be handled in Python
 - Song genres are not available
 - Artist genres are passed as an array, with multiple genres per artist
+
+
 
 ## Communication
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
