@@ -49,11 +49,30 @@ w.previous_rank,
 w.weeks_on_chart,
 w.streams,
 a.artist_genres,
-w.week
+w.week,
+t.danceability,
+t.energy,
+t.key,
+t.loudness,
+t.mode,
+t.speechiness,
+t.acousticness,
+t.instrumentalness,
+t.liveness,
+t.valence,
+t.tempo,
+t.type,
+t.id,
+t.track_href,
+t.analysis_url,
+t.duration_ms,
+t.time_signature
 
 FROM weekly_global_streams AS w
 LEFT JOIN artist_genres AS a
 ON w.artist_names = a.artist_name
+LEFT JOIN track_analytics AS t
+ON w.uri = t.uri
 ORDER BY rank;
 
 -- Use the below as this provides all available data
@@ -66,9 +85,28 @@ w.previous_rank,
 w.weeks_on_chart,
 w.streams,
 a.artist_genres,
-w.week
+w.week,
+t.danceability,
+t.energy,
+t.key,
+t.loudness,
+t.mode,
+t.speechiness,
+t.acousticness,
+t.instrumentalness,
+t.liveness,
+t.valence,
+t.tempo,
+t.type,
+t.id,
+t.track_href,
+t.analysis_url,
+t.duration_ms,
+t.time_signature
 
 FROM weekly_global_streams AS w
 LEFT JOIN artist_genres AS a
 ON w.artist_names = a.artist_name
+LEFT JOIN track_analytics AS t
+ON w.uri = t.uri
 ORDER BY rank;
