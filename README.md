@@ -83,10 +83,10 @@ We explored the raw data using a combination of Python and Tableau looking for d
 ![This is an Image](https://github.com/Azykan/Final-Project/blob/main/Resources/AWS_database_view.png)
 
 #### Data in Database
-![This is an Image](https://github.com/Azykan/Final-Project/blob/main/Resources/AWS_database.png)
+![This is an Image](https://github.com/Azykan/Final-Project/blob/main/Resources/AWS_database_2.png)
 
 #### ERD
-![QuickDBD_ERD_export](https://user-images.githubusercontent.com/97486216/182056600-94153e73-ba97-4528-85be-7a390ee18556.png)
+![QuickDBD_ERD_export](https://github.com/Azykan/Final-Project/blob/main/Resources/QuickDBD-export-2.png)
 
 ## Data Visualization
 
