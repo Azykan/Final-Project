@@ -141,6 +141,9 @@ Songs with duration between 150000 ms to 250000 ms tends to be hits more that th
 
 Songs with energy level that fall in the spectrum between 0.5 to 0.8 seem to be more hits that compared to the songs at the other ends of the graph.
 
+## Design Tree
+
+![tree_high_dpi](https://user-images.githubusercontent.com/100887673/182882187-7d0c0d7c-7e80-485d-b283-7ac0c6b47afe.png)
 
 ## Data Cleansing
 - Replaced non-English characters with English variants
