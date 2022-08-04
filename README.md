@@ -141,6 +141,12 @@ Songs with duration between 150000 ms to 250000 ms tends to be hits more that th
 
 Songs with energy level that fall in the spectrum between 0.5 to 0.8 seem to be more hits that compared to the songs at the other ends of the graph.
 
+### Acousticness
+
+![acousticness](https://user-images.githubusercontent.com/100887673/182882690-8a85f395-c42f-4cc9-8ae9-011c1c6457c9.png)
+
+Songs that have a lower level of acousticness seem to place themselves favorably in the charts.
+
 ## Design Tree
 
 ![tree_high_dpi](https://user-images.githubusercontent.com/100887673/182882187-7d0c0d7c-7e80-485d-b283-7ac0c6b47afe.png)
