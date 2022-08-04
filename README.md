@@ -147,6 +147,12 @@ Songs with energy level that fall in the spectrum between 0.5 to 0.8 seem to be 
 
 Songs that have a lower level of acousticness seem to place themselves favorably in the charts.
 
+### Instrumental
+
+![instrument](https://user-images.githubusercontent.com/100887673/182883392-94ea050d-3e41-452f-8863-3a329daa2859.png)
+
+Similarly, songs that have lower level of instrumentalness tend to be more successful. No more Steve Vais & Joe Satrianis.
+
 ## Design Tree
 
 ![tree_high_dpi](https://user-images.githubusercontent.com/100887673/182882187-7d0c0d7c-7e80-485d-b283-7ac0c6b47afe.png)
