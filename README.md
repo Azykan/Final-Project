@@ -97,11 +97,50 @@ https://public.tableau.com/app/profile/angela.zykan/viz/FinalProjectv1_165888775
 
 ## Machine Learning
 
-The Machine Learning model will predict if a song that hasn't yet been in the Top 20 is likely to make it to the Top 20 based on its attributes, compared to attributes of past Top 20 songs.
+Through the various graphs listed below, we can see how different attributes can impact the chances of a song being a hit.
+For example:
+### Tempo
 
-### Preprocessing
+![tempo](https://user-images.githubusercontent.com/100887673/182881111-636aff1b-bd83-4622-885d-12a2916a7199.png)
 
-The training dataset will include the Top 20 songs from each week since 2018, including number of streams and song metadata, and the bottom 180 songs from each week will be compared on metadata similarity to the Top 20.
+According to the graph, we can assume that most songs that are between 90 to 105 beats per second have a higher chances of being a hit. We can also see that there are some songs in the range of 110 to 125 & 135 to 145 beats pers second that have a probability of being a hit. 
+
+### Danceability
+
+![danceability](https://user-images.githubusercontent.com/100887673/182881180-8026834f-96bd-4b40-9432-d39e33b30d31.png)
+
+Refering to danceability attribute of a song, we can observe that the songs that have a danceable music has more chances of being a hit.
+
+### Key
+
+![key](https://user-images.githubusercontent.com/100887673/182881285-8e7ce55a-92d2-4033-9467-174f86f5926c.png)
+
+In this graph, if we reference it with pitch class notation system, we can assume that the songs that use C,D, & E notes often tend to be hits.
+
+### Valence
+
+![valence](https://user-images.githubusercontent.com/100887673/182881590-1df1bc3c-c124-4f40-b564-778d774ff39a.png)
+
+Musical positiveness conveyed by a track is known as valence. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry). So, according to the graph, it can be said that positive sounding songs tend to hits more than songs with negativity.
+
+### Loudness
+
+![loudness](https://user-images.githubusercontent.com/100887673/182881628-429cc34d-7c42-4bd1-906c-770b843b8695.png)
+
+Referencing the graph, presumably songs with decibel level somewhere between -2.5 to -7.5 seem to top the charts more.
+
+### Duration (MS)
+
+![duration](https://user-images.githubusercontent.com/100887673/182881687-eeb4526c-8597-4bdb-a95b-d2df58c21b1c.png)
+
+Songs with duration between 150000 ms to 250000 ms tends to be hits more that the ones with longer durations. So, basically no more extended guitar solos.
+
+### Energy
+
+![energy](https://user-images.githubusercontent.com/100887673/182881743-1c5f8968-df39-4314-8573-6317ec84983e.png)
+
+Songs with energy level that fall in the spectrum between 0.5 to 0.8 seem to be more hits that compared to the songs at the other ends of the graph.
+
 
 ## Data Cleansing
 - Replaced non-English characters with English variants
