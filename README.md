@@ -157,6 +157,18 @@ Similarly, songs that have lower level of instrumentalness tend to be more succe
 
 ![tree_high_dpi](https://user-images.githubusercontent.com/100887673/182882187-7d0c0d7c-7e80-485d-b283-7ac0c6b47afe.png)
 
+## DT_Prediction
+
+![DT_Predictions](https://user-images.githubusercontent.com/100887673/183302834-d447ef12-aed8-4315-8977-369251767b65.png)
+
+## RF_Prediction
+
+![RF_prediction](https://user-images.githubusercontent.com/100887673/183302847-d8da41e0-2d51-4def-8fbb-d4bd05b9b6e0.png)
+
+## BT_Prediction
+
+![BT_prediction](https://user-images.githubusercontent.com/100887673/183302859-5140af81-32d5-4810-9c49-8a9a15565784.png)
+
 ## Data Cleansing
 - Replaced non-English characters with English variants
 - Used the following Regex to create valid JSON from Python API logs "features retrieved in \d{1}.{1}\d{2} seconds$"
