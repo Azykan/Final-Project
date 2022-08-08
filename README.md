@@ -93,7 +93,12 @@ We explored the raw data using a combination of Python and Tableau looking for d
 Data Visualization in Tableau
 https://public.tableau.com/app/profile/angela.zykan/viz/FinalProjectv1_16588877562730/RaceChartbyArtist
 
-![Race Chart by Artist](https://user-images.githubusercontent.com/97486216/182058364-da05ea76-b37b-4bcd-afe2-ec65baabf1dc.png)
+Animated Race Chart by Artist
+![Race Chart by Artist (1)](https://user-images.githubusercontent.com/97486216/183318916-787bba41-3a97-46b3-94ba-3ce5b88dd838.png)
+
+Popular Artist by Genre with each song's attributes
+![Popular Artists by Genre](https://user-images.githubusercontent.com/97486216/183318953-16ac41e6-ed35-4c7f-98f0-c693c015bfb9.png)
+
 
 ## Machine Learning
 
