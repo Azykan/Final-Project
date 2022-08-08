@@ -40,6 +40,7 @@ SELECT * FROM artist_genres;
 
 SELECT * FROM weekly_global_streams;
 
+-- Use the below as this provides all available data
 SELECT DISTINCT w.rank,
 w.uri,
 w.artist_names,
