@@ -162,17 +162,15 @@ Similarly, songs that have lower level of instrumentalness tend to be more succe
 
 ![tree_high_dpi](https://user-images.githubusercontent.com/100887673/182882187-7d0c0d7c-7e80-485d-b283-7ac0c6b47afe.png)
 
-## DT_Prediction
+## ML process
+Most of the data was in the format that was required. I had to drop some columns and data that were not of any use. For example: track uri, track_id, e.t.c. 
+The only data that needed any conversion was Popularity. Popularity is converted into a binary variable and, for our use, all songs ranking between 1 -20 is designated as 0. Like wise, any songs from 21 and above has been designated as 1.
 
-![DT_Predictions](https://user-images.githubusercontent.com/100887673/183302834-d447ef12-aed8-4315-8977-369251767b65.png)
+I have chosen 3 models just to see if any of them would be much more favorable. But, the difference seems very minimum.
+Multiple classifiers were used for generating accuracy scores. The difference in accuracy was not significantly vast.
+![classifier](https://user-images.githubusercontent.com/100887673/183332078-b36648c8-bd94-435f-9b56-e1125fac3dd1.png)
 
-## RF_Prediction
 
-![RF_prediction](https://user-images.githubusercontent.com/100887673/183302847-d8da41e0-2d51-4def-8fbb-d4bd05b9b6e0.png)
-
-## BT_Prediction
-
-![BT_prediction](https://user-images.githubusercontent.com/100887673/183302859-5140af81-32d5-4810-9c49-8a9a15565784.png)
 
 ## Data Cleansing
 - Replaced non-English characters with English variants
