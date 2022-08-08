@@ -93,7 +93,12 @@ We explored the raw data using a combination of Python and Tableau looking for d
 Data Visualization in Tableau
 https://public.tableau.com/app/profile/angela.zykan/viz/FinalProjectv1_16588877562730/RaceChartbyArtist
 
-![Race Chart by Artist](https://user-images.githubusercontent.com/97486216/182058364-da05ea76-b37b-4bcd-afe2-ec65baabf1dc.png)
+Animated Race Chart by Artist
+![Race Chart by Artist (1)](https://user-images.githubusercontent.com/97486216/183318916-787bba41-3a97-46b3-94ba-3ce5b88dd838.png)
+
+Popular Artist by Genre with each song's attributes
+![Popular Artists by Genre](https://user-images.githubusercontent.com/97486216/183318953-16ac41e6-ed35-4c7f-98f0-c693c015bfb9.png)
+
 
 ## Machine Learning
 
@@ -157,17 +162,15 @@ Similarly, songs that have lower level of instrumentalness tend to be more succe
 
 ![tree_high_dpi](https://user-images.githubusercontent.com/100887673/182882187-7d0c0d7c-7e80-485d-b283-7ac0c6b47afe.png)
 
-## DT_Prediction
+## ML process
+Most of the data was in the format that was required. I had to drop some columns and data that were not of any use. For example: track uri, track_id, e.t.c. 
+The only data that needed any conversion was Popularity. Popularity is converted into a binary variable and, for our use, all songs ranking between 1 -20 is designated as 0. Like wise, any songs from 21 and above has been designated as 1.
 
-![DT_Predictions](https://user-images.githubusercontent.com/100887673/183302834-d447ef12-aed8-4315-8977-369251767b65.png)
+I have chosen 3 models just to see if any of them would be much more favorable. But, the difference seems very minimum.
+Multiple classifiers were used for generating accuracy scores. The difference in accuracy was not significantly vast.
+![classifier](https://user-images.githubusercontent.com/100887673/183332078-b36648c8-bd94-435f-9b56-e1125fac3dd1.png)
 
-## RF_Prediction
 
-![RF_prediction](https://user-images.githubusercontent.com/100887673/183302847-d8da41e0-2d51-4def-8fbb-d4bd05b9b6e0.png)
-
-## BT_Prediction
-
-![BT_prediction](https://user-images.githubusercontent.com/100887673/183302859-5140af81-32d5-4810-9c49-8a9a15565784.png)
 
 ## Data Cleansing
 - Replaced non-English characters with English variants
