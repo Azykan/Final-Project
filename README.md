@@ -101,74 +101,72 @@ Popular Artist by Genre with each song's attributes
 
 
 ## Machine Learning
+The data chosen was the Top 200 songs provided by Spotify, pulled from Spotipy. The dataset was not too large and contained 4291 songs.
 
-Through the various graphs listed below, we can see how different attributes can impact the chances of a song being a hit.
-For example:
-### Tempo
+Although much of the data was in required format, some modifications had to be performed for some columns. Notably, the dataset had a column named “rank” that was changed into “popularity” to avoid confusion.
 
-![tempo](https://user-images.githubusercontent.com/100887673/182881111-636aff1b-bd83-4622-885d-12a2916a7199.png)
+For this project, we are trying to predict the ability of a song to be in Top 20  based purely on song metrics such as key, dancibility, acousticness, e.t.c.
+After uploading my data, we wanted to see how a songs popularity correlates with its other attributes. So, we created a comparison graph for the said attributes against the popularity, which are as follow; 
 
-According to the graph, we can assume that most songs that are between 90 to 105 beats per second have a higher chances of being a hit. We can also see that there are some songs in the range of 110 to 125 & 135 to 145 beats pers second that have a probability of being a hit. 
+![acc1](https://user-images.githubusercontent.com/100887673/183524383-920117c1-6710-4103-ad74-931d659b9cb5.png)
 
-### Danceability
+X= Acounsticness, Y= popularity
+This shows that the songs that has low level of acousticness have high probability of being in Top 20. 
 
-![danceability](https://user-images.githubusercontent.com/100887673/182881180-8026834f-96bd-4b40-9432-d39e33b30d31.png)
+![dac 1](https://user-images.githubusercontent.com/100887673/183524615-d66db2e9-334f-4274-bb97-d15f119404c4.png)
 
-Refering to danceability attribute of a song, we can observe that the songs that have a danceable music has more chances of being a hit.
+X= Danceability, Y= popularity
+This shows that songs that are between the spectrum of 0.6 to 0.9 in danceability have high probability of being in Top 20.
 
-### Key
+![vslen](https://user-images.githubusercontent.com/100887673/183524903-82b1bd1d-9226-4621-9830-8c669993c4b9.png)
 
-![key](https://user-images.githubusercontent.com/100887673/182881285-8e7ce55a-92d2-4033-9467-174f86f5926c.png)
+X= Valence, Y= popularity
+This shows that songs that have some positivity tends to be in Top 20s more than those that are very negative or extremely optimistic.
 
-In this graph, if we reference it with pitch class notation system, we can assume that the songs that use C,D, & E notes often tend to be hits.
+![loud](https://user-images.githubusercontent.com/100887673/183525135-09d19a10-749a-4a07-a6a0-68f2eccc9d4b.png)
 
-### Valence
+X= Loudness, Y= popularity
+This shows that the songs that are between -7.5 to -2.5 db are in Top 20 more that those that fall beyond this spectrum.
 
-![valence](https://user-images.githubusercontent.com/100887673/182881590-1df1bc3c-c124-4f40-b564-778d774ff39a.png)
+![dur](https://user-images.githubusercontent.com/100887673/183525170-001d5f75-c57b-4b15-975a-265069b06c17.png)
 
-Musical positiveness conveyed by a track is known as valence. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry). So, according to the graph, it can be said that positive sounding songs tend to hits more than songs with negativity.
+X= Duration, Y= popularity
+This shows that the songs that are between 150000 ms to 250000 tends to be in Top 20 more than those with longer durations.
 
-### Loudness
+Likewise, below is a plot summary of all the attributes.
 
-![loudness](https://user-images.githubusercontent.com/100887673/182881628-429cc34d-7c42-4bd1-906c-770b843b8695.png)
+![multi_plots](https://user-images.githubusercontent.com/100887673/183525224-7035477d-6d40-494e-ba32-f30d12be64a4.png)
 
-Referencing the graph, presumably songs with decibel level somewhere between -2.5 to -7.5 seem to top the charts more.
+# Processing
 
-### Duration (MS)
+Before creating and testing the models, one_hot code was used to assign binary codes to columns artist_names, track_name, and artist_genres.
 
-![duration](https://user-images.githubusercontent.com/100887673/182881687-eeb4526c-8597-4bdb-a95b-d2df58c21b1c.png)
+![qcut](https://user-images.githubusercontent.com/100887673/183527722-eabd33e6-e341-4cc4-b94f-371732cb0aed.png)
 
-Songs with duration between 150000 ms to 250000 ms tends to be hits more that the ones with longer durations. So, basically no more extended guitar solos.
+Then we used qcut() function to cut the Popularity column into Qcut will separate the cut into less popular and more popular and assign binary numbers. 0 = in top 20  & 1 = outside top 20.
 
-### Energy
+![one_hot](https://user-images.githubusercontent.com/100887673/183527746-ef40da35-4d5b-439e-b477-af046350555d.png)
 
-![energy](https://user-images.githubusercontent.com/100887673/182881743-1c5f8968-df39-4314-8573-6317ec84983e.png)
+Then we used one_hot code function and make copy of the dataframe, to prevent modifying it in place. Then we create a dummy column (pd.get_dummies()) for creating our one_hot column. Then we concacnate our data frame and the dummies on column axis. Then drop the original column that we used to create the dummies.
 
-Songs with energy level that fall in the spectrum between 0.5 to 0.8 seem to be more hits that compared to the songs at the other ends of the graph.
+Then we assign the one_hot function to our astists & genre columns, that will assign them binary numbers according to their respective genres. After running the code, we will see that we have 497 columns compared to 15.
 
-### Acousticness
+The next part is to split and scale the data. 
 
-![acousticness](https://user-images.githubusercontent.com/100887673/182882690-8a85f395-c42f-4cc9-8ae9-011c1c6457c9.png)
+![split](https://user-images.githubusercontent.com/100887673/183526034-7e593b8b-9ecf-45cc-914c-9ee4010ce1dd.png)
 
-Songs that have a lower level of acousticness seem to place themselves favorably in the charts.
+‘y” will be what we are trying to predict, which in this case is “Popularity.” We use .loc because it creates a fresh slice of data frame, so that any changes we make to “y” here doesn’t change data in our previous data frame. Then we drop “Popularity” from the X axis.
 
-### Instrumental
+Now we use StandardScaler() to scale X. This will scale each column in X so that it has everything in it but “Popularity” column. It scales each column to be centered with mean of 0 and to have unit variance of 1.
 
-![instrument](https://user-images.githubusercontent.com/100887673/182883392-94ea050d-3e41-452f-8863-3a329daa2859.png)
+Then we split the set into train and test, using Sklearns’ train_test_split() function, setting the test size to 70%.
+Now we create models and train them.
 
-Similarly, songs that have lower level of instrumentalness tend to be more successful. No more Steve Vais & Joe Satrianis.
+I chose 3 models to train in order to see if it produces any significant differences in the accuracy.
+Unfortunately or fortunately, the accuracy score for all 3 data, as seen below, were very minimal.
 
-## Design Tree
+![acc](https://user-images.githubusercontent.com/100887673/183526003-e4cd858a-0e60-438f-8c1b-cf03b4ee1ad1.png)
 
-![tree_high_dpi](https://user-images.githubusercontent.com/100887673/182882187-7d0c0d7c-7e80-485d-b283-7ac0c6b47afe.png)
-
-## ML process
-Most of the data was in the format that was required. I had to drop some columns and data that were not of any use. For example: track uri, track_id, e.t.c. 
-The only data that needed any conversion was Popularity. Popularity is converted into a binary variable and, for our use, all songs ranking between 1 -20 is designated as 0. Like wise, any songs from 21 and above has been designated as 1.
-
-I have chosen 3 models just to see if any of them would be much more favorable. But, the difference seems very minimum.
-Multiple classifiers were used for generating accuracy scores. The difference in accuracy was not significantly vast.
-![classifier](https://user-images.githubusercontent.com/100887673/183332078-b36648c8-bd94-435f-9b56-e1125fac3dd1.png)
 
 
 
