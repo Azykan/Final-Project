@@ -1,0 +1,118 @@
+body {
+
+    color: #1c1c1c;
+    background: rgb(243, 243, 243);
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    line-height: 2.5;
+  }
+
+  .container {
+    color: #1b1b1b;
+    font-family: inherit; 
+    font-size: medium;
+    width: 100% ;
+   }  
+
+/*
+ .tag {
+     font-family: inherit; 
+     font-size: 1rem;
+    }  
+*/
+  .jumbotron {
+    background: url("https://d2cbg94ubxgsnp.cloudfront.net/Pictures/2000x1125/7/3/0/520730_shutterstock_1048694117_311756.jpg") no-repeat center;
+    z-index: 0;
+    background-size: 100% 100%;
+    width: 100% ;
+    height: 200px;  
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: x-large;   
+    text-align: center;
+    color: #9a96ff;
+    }
+
+    .jumbotron-footer {
+      background: rgb(255,255,255);
+      background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 50%);
+      background-size: 100% 100%;
+      padding-top: 0px;
+      margin-top: -10px;
+      height: 25px; 
+  
+  
+    }
+
+    .logo {
+      margin: 0px;
+      z-index: 1;
+      position: relative;
+      top: -65px;
+      left: 88%;
+  
+  
+    }
+
+  .intro1 {
+    margin: 20px;
+    font-size: 24px;
+  }
+
+  .intro2 {
+    margin: 20px;
+    font-size: 20px;
+  }
+
+.features {
+  margin: 40px;
+  margin-top: 20px;
+  font-size: 18px;
+  table-layout: fixed;
+  width: 100%;
+
+  }
+
+.table {
+  line-height: 2.5;
+  border-spacing: 10em;
+}
+
+.table table, tr, td, th {
+  border: 2px solid rgb(230, 230, 230);
+  border-collapse: collapse;
+  line-height: 2.5;
+  padding-top: 1em;
+  padding-bottom: 2em;
+ 
+  }
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #9a96ff;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+
+blockquote:before {
+    color: #9a96ff;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+blockquote:after {
+    color: #9a96ff;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+.link { color: rgb(155, 99, 99); 
+
+  }
