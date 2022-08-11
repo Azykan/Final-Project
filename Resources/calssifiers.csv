@@ -1,4 +1,0 @@
-,Classifiers,Accuracy
-0,LogisticRegression,0.5532623169107856
-1,RandomForestClassifier,0.702063914780293
-2,DecisionTreeClassifier,0.7073901464713716
