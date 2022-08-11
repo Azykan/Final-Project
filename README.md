@@ -1,9 +1,11 @@
-# What makes a song popular?
+# Which songs will be the next hits?
+## Analysis by Angela Zykan, Blaine Moreland, and Prakiran Shrestha
 
-Click on link below for our website 
+#### Click on link for our website 
 https://azykan.github.io/Final-Project/
 
-![Music back round Best](https://user-images.githubusercontent.com/97486216/180366857-01c76bba-445e-469f-b123-70bef6e8782e.jpg)
+![Picture1](https://user-images.githubusercontent.com/97486216/184250638-3d4afa6a-d620-4de5-a234-aa308b271176.jpg)
+
 
 Hundreds of thousands of artists have been creating music to reach the Top 20 in their genres. The likelihood of success for any song to reach the Top 20 is low, so we plan to analyze Spotify's fan-based song streaming data to analyze streaming trends. 
 
