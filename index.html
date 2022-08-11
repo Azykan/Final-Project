@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>What makes a song popular?</title>
+    <title>Which songs will be the next hits?</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -22,7 +22,7 @@
 
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center">
-        <h1>What makes a streaming song popular?</h1>
+        <h1>Which songs will be the next hits?</h1>
         <!-- Add a button to activate scraping script -->
       </div>
       <div class="jumbotron-footer">
@@ -36,52 +36,58 @@
 
   </div>
    
-
+  <div class="intro_top">
+    <p><i>Analysis by Angela Zykan, Blaine Moreland, and Prakiran Shrestha</i></p>
+  </div>
    
   <div class="intro1">
-    <h1>An analysis of Spotify streaming data</h1> 
-    <p>Hundreds of thousands of artists have been creating music to reach the Top 20 in their genres. 
+    <h1>A prediction of Spotify streaming data</h1> 
+    <p>We used Spotify's fan-based data to show streaming trends and predict the next hits.
     <br>
-    The likelihood of success for any song to reach the Top 20 is low, so we analyzed Spotify's fan-based song streaming data to show streaming trends.
     </p>
-
-    <br>
     <p>
-    <i>Analysis by Angela Zykan, Blaine Moreland, and Prakiran Shrestha</i>
+    
+    <br>
+    <br>
     </p>
   </div>
+
+
+  <div class="intro1">
+    <p><h1>Music charts are misguided!</h1></p>
+  </div>  
 
   <div class="intro2">
     <p>
     <blockquote>
       [The rise of music streaming services] fundamentally changed how music is valued. Instead of sales, the emphasis was on repeated listens and getting a song on a popular playlist or radio station. The music industry shunned the new platforms at the start, with several artists blocking Spotify and Pandora from using their material.
     </blockquote>
-    We chose to use Spotify as the data source because it is one of the most popular music streaming platform in the world, with over 350 million users and 150 million subscribers. 5
+    We used Spotify as the data source because it is one of the most popular music streaming platforms in the world, with over 350 million users and 150 million subscribers.
 
     Fan-based song popularity is a better measure of popularity than music awards. Music awards, such as the Grammys, and Music Charts, such as Billboard, are flawed for a number of reasons.
     </p>
     <p>
 
       <h2>Grammy Awards 1</h2>
-      <li>Songs must be nominated by members of the National Academy of Recording Arts and Sciences (NARAS) for consideration in the awards</li>
-      <li>Nominated songs are then reviewed by 150 recording industry experts for eligibility</li>
-      <li>Songs that make it through the vetting process are put up for a vote by voting members</li>
-      <li>Academy members are required to vote solely based upon quality, without consideration for sales, chart performance, personal friendships, regional preferences, or company loyalty</li>
-      <li>Skewed towards artists with established record labels</li>
+      <li>Songs must be nominated by members of the National Academy of Recording Arts and Sciences (NARAS) for consideration in the awards.</li>
+      <li>Nominated songs are then reviewed by 150 recording industry experts for eligibility.</li>
+      <li>Songs that make it through the vetting process are put up for a vote by voting members.</li>
+      <li>Academy members are required to vote solely based upon quality, without consideration for sales, chart performance, personal friendships, regional preferences, or company loyalty.</li>
+      <li>Skewed towards artists with established record labels.</li>
       <h2>Billboard Charts 2</h2>
-      <li>Largely based on BDS and Soundscan, which tracks airplay (from broadcast radio) on monitored radio stations, using number of plays x total audience of each station</li>
-      <li>Songs moving down the chart will be removed automatically after 26 weeks</li>
-      <li>Record label-sponsored spin programs manipulated the charts</li>
-      <li>Skewed towards artists with established record labels</li>
+      <li>Largely based on BDS and Soundscan, which tracks airplay (from broadcast radio) on monitored radio stations, using number of plays x total audience of each station.</li>
+      <li>Songs moving down the chart will be removed automatically after 26 weeks.</li>
+      <li>Record label-sponsored spin programs manipulated the charts.</li>
+      <li>Skewed towards artists with established record labels.</li>
       <h2>MRC Data/Nielsen Soundscan 3</h2>
-      <li>Based on Point-of-sale album purchases</li>
-      <li>Does not include digital streams</li>
-      <li>Not all retailers participate in the SoundScan program, so total CD sales are projected from the collected data using weighting</li>
+      <li>Based on Point-of-sale album purchases. (which would have been more accurate in 1995)</li>
+      <li>Does not include digital streams.</li>
+      <li>Not all retailers participate in the SoundScan program, so total CD sales are projected from the collected data using weighting.</li>
       <br>
     </p>
     <p>
-      <p><h2>What problems our analysis solves</h2></p>
-      <p>Spotify API data includes streaming statistics for all streamed songs. Each of the traditional chart platforms is skewed by opinion, money, or bad/incomplete data.</p>
+      <p><h2>Fan-based data solves this</h2></p>
+      <p>Spotify API data includes statistics for all streamed songs. Each of the traditional chart platforms is skewed by opinion, money, or bad/incomplete data.</p>
 
       <p>Although Spotify is only one of many streaming music services globally, it is a better representation of fan-based popularity than the traditional platforms used to build charts.</p>
     <br>
@@ -89,18 +95,24 @@
     </div>
 
 
-     
-  <div class="features">
+
+    <div class="intro1">
+      <p><h1>Elements of a song</h1></p>
+    </div>     
+  
+    <div class="features">
     <p>
-      Spotify supplies a number of attributes for most songs, based on an analysis of the audio. We used these attributes to make predictions.
-    </p>
+      There are a number of elements which describe a song, such as loudness, tempo, and danceability.</p>
+
+      <p>We used these elements (attributes) to predict the next hit songs.</p>
+
     <p>
-    <a href="https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features">This Spotify API document</a> describes the attributes as follows:
+    <a href="https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features">This Spotify document</a> describes the attributes as follows:
     </p>
 
     <table class="table">
       <tr>
-        <th>Audio Feature</th>
+        <th>Audio Attribute</th>
         <th>Definition</th>
       </tr>
       <tr>
@@ -160,44 +172,43 @@
   </div>
 
 
-  
-  <div style="display: flex; width: 80%; margin-left: auto; margin-right: auto;">
-     <!-- Start Tableau embed 1 -->
-     <div class='tableauPlaceholder' id='viz1659409024032' style='position: relative'><noscript><a href='#'>
-     <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectv1_16588877562730&#47;RaceChartbyArtist&#47;1_rss.png' style='border: none' /></a>
-      </noscript>
-       <object class='tableauViz'  style='display:none;'>
-         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-         <param name='embed_code_version' value='3' /> 
-         <param name='site_root' value='' />
-         <param name='name' value='FinalProjectv1_16588877562730&#47;RaceChartbyArtist' />
-         <param name='tabs' value='no' />
-         <param name='toolbar' value='yes' />
-         <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectv1_16588877562730&#47;RaceChartbyArtist&#47;1.png' /> 
-         <param name='animate_transition' value='yes' />
-         <param name='display_static_image' value='yes' />
-         <param name='display_spinner' value='yes' />
-         <param name='display_overlay' value='yes' />
-         <param name='display_count' value='yes' />
-         <param name='language' value='en-US' /><param name='filter' value='publish=yes' />
-        </object>
-      </div>                
-      <script type='text/javascript'>                    
-          var divElement = document.getElementById('viz1659409024032');                    
-          var vizElement = divElement.getElementsByTagName('object')[0];                    
-            if ( divElement.offsetWidth > 800 ) 
-                { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1000px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
-            else if ( divElement.offsetWidth > 500 ) 
-                { vizElement.style.minWidth='500px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
-            else 
-              { vizElement.style.width='100%';vizElement.style.minHeight='1200px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     
+  <div class="intro1">
+    <p><h1>Elements of a song</h1></p>
+  </div>  
 
-        var scriptElement = document.createElement('script');                    
+<div style="display: flex; width: 80%; margin-left: auto; margin-right: auto;">
+  <div class='tableauPlaceholder' id='viz1660174532792' style='position: relative'>
+    <noscript><a href='#'>
+      <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectv1_16588877562730&#47;SongAttributes&#47;1_rss.png' style='border: none' />
+    </a></noscript><object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='FinalProjectv1_16588877562730&#47;SongAttributesStory' />
+      <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectv1_16588877562730&#47;SongAttributes&#47;1.png' /> 
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' /></object></div>                
+      <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1660174532792');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800 ) 
+          { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='300px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+          else if ( divElement.offsetWidth > 500 ) 
+          { vizElement.style.minWidth='500px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='300px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+          else { vizElement.style.width='100%';vizElement.style.minHeight='700px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     
+          var scriptElement = document.createElement('script');                    
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
           vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-      </script>
-    <!-- End Tableau embed 1 -->
-</div> 
+        </script>
+</div>   
+  
+
   
 <div style="display: flex; width: 80%; margin-left: auto; margin-right: auto;">
    <!-- Start Tableau embed 2 -->       
@@ -236,6 +247,44 @@
    <!-- End Tableau embed 2 -->      
 </div>
 
+
+<div style="display: flex; width: 80%; margin-left: auto; margin-right: auto;">
+  <!-- Start Tableau embed 1 -->
+  <div class='tableauPlaceholder' id='viz1659409024032' style='position: relative'><noscript><a href='#'>
+  <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectv1_16588877562730&#47;RaceChartbyArtist&#47;1_rss.png' style='border: none' /></a>
+   </noscript>
+    <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='FinalProjectv1_16588877562730&#47;RaceChartbyArtist' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectv1_16588877562730&#47;RaceChartbyArtist&#47;1.png' /> 
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' /><param name='filter' value='publish=yes' />
+     </object>
+   </div>                
+   <script type='text/javascript'>                    
+       var divElement = document.getElementById('viz1659409024032');                    
+       var vizElement = divElement.getElementsByTagName('object')[0];                    
+         if ( divElement.offsetWidth > 800 ) 
+             { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1000px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+         else if ( divElement.offsetWidth > 500 ) 
+             { vizElement.style.minWidth='500px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} 
+         else 
+           { vizElement.style.width='100%';vizElement.style.minHeight='1200px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     
+
+     var scriptElement = document.createElement('script');                    
+       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+       vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+   </script>
+ <!-- End Tableau embed 1 -->
+</div> 
 
 </div>  <!-- End Container -->
 
